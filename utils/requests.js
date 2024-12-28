@@ -1,3 +1,4 @@
+// export const dynamic = 'force-dynamic';
 const apiDomain = process.env.NEXT_PUBLIC_API_DOMAIN || null
 
 // Fetch all properties
@@ -12,18 +13,16 @@ async function fetchProperties({ showFeatured = false } = {}) {
       `${apiDomain}/properties${showFeatured ? '/featured' : ''}`,
       { cache: 'default' }
     )
-    const data = await res.json()
+
+    // const res = await fetch(
+    //   `${apiDomain}/properties`, { cache: 'no-store' }
+    // );
 
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
 
-    return {
-      props: {
-        featuredProperties: data,
-      },
-      revalidate: 60,
-    }
+    return res.json()
   } catch (error) {
     console.log(error)
     return []
