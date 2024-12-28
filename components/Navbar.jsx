@@ -87,7 +87,7 @@ const Navbar = () => {
                    text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`
                   }
                 >
-                  Properties
+                  Недвижимость
                 </Link>
                 { session && (
                   <Link
@@ -96,7 +96,7 @@ const Navbar = () => {
                     text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`
                     }
                   >
-                    Add Property
+                    Добавить Недвижимость
                   </Link>
                 )}
 
@@ -188,7 +188,7 @@ const Navbar = () => {
                       setIsProfileMenuOpen(false)
                     }}
                   >
-                    Your Profile
+                    Профиль
                   </Link>
                   <Link
                     href='/properties/saved'
@@ -200,7 +200,7 @@ const Navbar = () => {
                       setIsProfileMenuOpen(false)
                     }}
                   >
-                    Saved Properties
+                    Сохраненная Недвижимость
                   </Link>
                   <button
                     onClick={() => {
@@ -212,7 +212,7 @@ const Navbar = () => {
                     tabIndex='-1'
                     id='user-menu-item-2'
                   >
-                    Sign Out
+                    Выйти
                   </button>
                 </div>
                 )}
@@ -232,7 +232,7 @@ const Navbar = () => {
             text-white block rounded-md px-3 py-2 text-base font-medium
             `}
           >
-            Home
+            Главная
           </Link>
           <Link
             href='/properties'
@@ -240,7 +240,7 @@ const Navbar = () => {
             text-white block rounded-md px-3 py-2 text-base font-medium
             `}
           >
-            Properties
+            Недвижимость
           </Link>
           { session && (
             <Link
@@ -249,7 +249,7 @@ const Navbar = () => {
               text-white block rounded-md px-3 py-2 text-base font-medium
               `}
             >
-              Add Property
+              Добавить Недвижимость
             </Link>
           )}
           { !session && 

@@ -40,7 +40,7 @@ const PropertySearchForm = () => {
       </div>
       <div className='w-full md:w-2/5 md:pl-2'>
         <label htmlFor='property-type' className='sr-only'>
-          Property Type
+          Тип Недвижимости
         </label>
         <select
           id='property-type'
@@ -48,22 +48,22 @@ const PropertySearchForm = () => {
           value={propertyType}
           onChange={(e) => setPropertyType(e.target.value)}
         >
-          <option value='All'>All</option>
-          <option value='Apartment'>Apartment</option>
-          <option value='Studio'>Studio</option>
-          <option value='Condo'>Condo</option>
-          <option value='House'>House</option>
+          <option value='All'>Все</option>
+          <option value='Apartment'>Апартамент</option>
+          <option value='Studio'>Студия</option>
+          <option value='Condo'>Ателье</option>
+          <option value='House'>Дом</option>
           <option value='Cabin Or Cottage'>Cabin or Cottage</option>
-          <option value='Loft'>Loft</option>
-          <option value='Room'>Room</option>
-          <option value='Other'>Other</option>
+          <option value='Loft'>Лофт</option>
+          <option value='Room'>Комната</option>
+          <option value='Other'>Другое</option>
         </select>
       </div>
       <button
         type='submit'
         className='md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500'
       >
-        Search
+        Поиск
       </button>
     </form>
   )
