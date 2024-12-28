@@ -12,12 +12,18 @@ async function fetchProperties({ showFeatured = false } = {}) {
       `${apiDomain}/properties${showFeatured ? '/featured' : ''}`,
       { cache: 'no-store' }
     )
+    const data = await res.json()
 
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
 
-    return await res.json()
+    return {
+      props: {
+        featuredProperties: data,
+      },
+      revalidate: 60,
+    }
   } catch (error) {
     console.log(error)
     return []
