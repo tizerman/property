@@ -10,21 +10,26 @@ async function fetchProperties({ showFeatured = false } = {}) {
 
     const res = await fetch(
       `${apiDomain}/properties${showFeatured ? '/featured' : ''}`,
-      { cache: 'no-store' }
+      { cache: 'default' }
     )
 
     // const res = await fetch(
-    //   `${apiDomain}/properties`, { cache: 'default' }
+    //   `${apiDomain}/properties`, { cache: 'no-store' }
     // );
 
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
 
-    return await res.json()
+    const data = await res.json()
+    return {
+      props: { data },
+      revalidate: 60,  // Регулярное обновление данных каждые 60 секунд
+    }
   } catch (error) {
     console.log(error)
-    return []
+    return {
+    props: { data: [], error: error.message },
   }
 }
 
