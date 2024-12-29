@@ -24,7 +24,7 @@ async function fetchProperties({ showFeatured = false } = {}) {
     const data = await res.json()
     return {
       props: { data },
-      revalidate: 60,  // Регулярное обновление данных каждые 60 секунд
+      revalidate: 60,  // updating data every 60 seconds
     }
   } catch (error) {
     console.log(error)
