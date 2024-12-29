@@ -4,9 +4,9 @@ import InfoBoxes from '@/components/InfoBoxes'
 import HomeProperties from '@/components/HomeProperties'
 import FeaturedProperties from '@/components/FeaturedProperties'
 
-// export const metadata = {
-//   title: 'Test',
-// }
+export const metadata = {
+  title: 'Test',
+}
 
 const HomePage = () => {
 
@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <Hero />
       <InfoBoxes />
-      {/* <FeaturedProperties /> */}
+      <FeaturedProperties />
       <HomeProperties />
     </>
   )
