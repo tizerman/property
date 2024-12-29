@@ -8,13 +8,13 @@ export const GET = async (request) => {
   try {
     await connectDB()
 
-    const page = request.nextUrl.searchParams.get('page') || 1;
-    const pageSize = request.nextUrl.searchParams.get('pageSize') || 6;
+    const page = request.nextUrl.searchParams.get('page') || 1
+    const pageSize = request.nextUrl.searchParams.get('pageSize') || 6
 
     const skip = (page - 1) * pageSize
 
     const total = await Property.countDocuments({})
-    const properties = await Property.find({}).sort({ _id: -1 }).skip(skip).limit(pageSize)
+    const properties = await Property.find({}).skip(skip).limit(pageSize)
 
     const result = {
       total,
