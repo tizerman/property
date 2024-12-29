@@ -18,10 +18,10 @@ const MainLayout = ({ children }) => {
   return (
     <GlobalProvider>
       <AuthProvider>
+        <Head>
+          <meta name="google-site-verification" content="JEufSRMVmgB7qxQOYPvrBUly4oSq9qA65GWkCHRi4N0" />
+        </Head>
         <html lang="en">
-          <Head>
-            <meta name="google-site-verification" content="JEufSRMVmgB7qxQOYPvrBUly4oSq9qA65GWkCHRi4N0" />
-          </Head>
           <body>
             <Navbar />
             <main>{children}</main>
