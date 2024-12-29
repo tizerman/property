@@ -29,7 +29,8 @@ async function fetchProperties({ showFeatured = false } = {}) {
   } catch (error) {
     console.log(error)
     return {
-    props: { data: [], error: error.message },
+      props: { data: [], error: error.message },
+    }
   }
 }
 
