@@ -21,16 +21,10 @@ async function fetchProperties({ showFeatured = false } = {}) {
       throw new Error('Failed to fetch data')
     }
 
-    const data = await res.json()
-    return {
-      props: { data },
-      revalidate: 60,  // updating data every 60 seconds
-    }
+    return await res.json()
   } catch (error) {
     console.log(error)
-    return {
-      props: { data: [], error: error.message },
-    }
+    return []
   }
 }
 
