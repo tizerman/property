@@ -3,10 +3,8 @@ import PropertyCard from '@/components/PropertyCard'
 import { fetchProperties } from '@/utils/requests'
 
 const HomeProperties = async () => {
-  const data = await fetchProperties({
-    showFeatured: false,
-  })
-  
+  const data = await fetchProperties()
+
   console.log(data)
 
   // const recentProperties = data.properties

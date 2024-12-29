@@ -10,11 +10,11 @@ async function fetchProperties({ showFeatured = false } = {}) {
 
     const res = await fetch(
       `${apiDomain}/properties${showFeatured ? '/featured' : ''}`,
-      { cache: 'default' }
+      { cache: 'no-store' }
     )
 
     // const res = await fetch(
-    //   `${apiDomain}/properties`, { cache: 'no-store' }
+    //   `${apiDomain}/properties`, { cache: 'default' }
     // );
 
     if (!res.ok) {
