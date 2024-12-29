@@ -23,7 +23,7 @@ async function fetchProperties({ showFeatured = false } = {}) {
       throw new Error('Failed to fetch data')
     }
 
-    return res.json()
+    return await res.json()
   } catch (error) {
     console.log(error)
     return []
