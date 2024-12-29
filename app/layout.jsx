@@ -6,11 +6,12 @@ import AuthProvider from "@/components/AuthProvider"
 import { GlobalProvider } from "@/context/GlobalContext"
 import { ToastContainer } from "react-toastify"
 import 'photoswipe/dist/photoswipe.css'
+import Head from 'next/head'
 
 export const metadata = {
-  title: "Property | Find The Rental",
-  description: "Find your dream rental property",
-  keywords: "rental, find rentals, find properties",
+  title: 'Аренда и купля-продажа недвижимости в Варне',
+  description: 'Найти недвижимость в Варне для покупки или аренды',
+  keywords: 'недвижимость, аренда недвижимости, продажа недвижимости, покупка недвижимости',
 }
 
 const MainLayout = ({ children }) => {
@@ -18,6 +19,9 @@ const MainLayout = ({ children }) => {
     <GlobalProvider>
       <AuthProvider>
         <html lang="en">
+          <Head>
+            <meta name="google-site-verification" content="JEufSRMVmgB7qxQOYPvrBUly4oSq9qA65GWkCHRi4N0" />
+          </Head>
           <body>
             <Navbar />
             <main>{children}</main>
