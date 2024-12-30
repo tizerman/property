@@ -5,13 +5,14 @@ import Footer from "@/components/Footer"
 import AuthProvider from "@/components/AuthProvider"
 import { GlobalProvider } from "@/context/GlobalContext"
 import { ToastContainer } from "react-toastify"
-import 'photoswipe/dist/photoswipe.css'
-import Head from 'next/head'
+import "photoswipe/dist/photoswipe.css"
+import Head from "next/head"
 
 export const metadata = {
-  title: 'Аренда и купля-продажа недвижимости в Варне',
-  description: 'Найти недвижимость в Варне для покупки или аренды',
-  keywords: 'недвижимость, аренда недвижимости, продажа недвижимости, покупка недвижимости',
+  title: "Аренда и купля-продажа недвижимости в Варне",
+  description: "Найти недвижимость в Варне для покупки или аренды",
+  keywords:
+    "недвижимость, аренда недвижимости, продажа недвижимости, покупка недвижимости",
 }
 
 const MainLayout = ({ children }) => {
@@ -19,7 +20,7 @@ const MainLayout = ({ children }) => {
     <GlobalProvider>
       <AuthProvider>
         <Head>
-          <meta name="google-site-verification" content="JEufSRMVmgB7qxQOYPvrBUly4oSq9qA65GWkCHRi4N0" />
+          <link rel="icon" type="favicon.ico" />
         </Head>
         <html lang="en">
           <body>
