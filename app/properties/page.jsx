@@ -2,6 +2,13 @@ import React from "react"
 import Properties from "@/components/Properties"
 import PropertySearchForm from "@/components/PropertySearchForm"
 
+export const metadata = {
+  title: "Аренда и продажа недвижимости в Варне",
+  description: "арендовать или купить квартиру в Варне",
+  keywords:
+    "арендовать, купить, продать, снять, сдать, квартиру, апартамент, недвижимость, в Варне",
+}
+
 const ProprtiesPage = async () => {
   return (
     <>
