@@ -43,7 +43,7 @@ const Navbar = () => {
               onClick={()=>setIsMobileMenuOpen((prev)=>!prev)}
             >
               <span className='absolute -inset-0.5'></span>
-              <span className='sr-only'>Open main menu</span>
+              <span className='sr-only'>Открыть главное меню</span>
               <svg
                 className='block h-6 w-6'
                 fill='none'
@@ -79,7 +79,7 @@ const Navbar = () => {
                    text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`
                   }
                 >
-                  Home
+                  Главная
                 </Link>
                 <Link
                   href='/properties'
@@ -127,7 +127,7 @@ const Navbar = () => {
                 className='relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800'
               >
                 <span className='absolute -inset-1.5'></span>
-                <span className='sr-only'>View notifications</span>
+                <span className='sr-only'>Просмотреть уведомления</span>
                 <svg
                   className='h-6 w-6'
                   fill='none'
@@ -157,7 +157,7 @@ const Navbar = () => {
                     onClick={()=>setIsProfileMenuOpen((prev)=>!prev)}
                   >
                     <span className='absolute -inset-1.5'></span>
-                    <span className='sr-only'>Open user menu</span>
+                    <span className='sr-only'>Открыть меню пользователя</span>
                     <Image
                       className='h-8 w-8 rounded-full'
                       src={profileImage || profileDefault}

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React from "react";
-import InfoBox from "./InfoBox.jsx";
+import Link from "next/link"
+import React from "react"
+import InfoBox from "./InfoBox.jsx"
 
 const InfoBoxes = () => {
   return (
@@ -8,34 +8,34 @@ const InfoBoxes = () => {
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
           <InfoBox
-            heading="for Renter"
+            heading="Для арендаторов"
             backgroundColor="bg-gray-100"
             buttonInfo={{
-              text: "Browse Property",
+              text: "Просмотр недвижимости",
               link: "/properties",
               backgroundColor: "bg-black",
             }}
           >
-            Find Your Dream rental property. Bookmark properties and contact
-            owner.
+            Найдите недвижимость своей мечты. Добавьте в закладки недвижимость и
+            свяжитесь с владельцем.
           </InfoBox>
           {/* 2nd infobox */}
           <InfoBox
-            heading="for Property owner"
+            heading="Для владельцев недвижимости"
             backgroundColor="bg-blue-100"
             buttonInfo={{
-              text: "Add Property",
+              text: "Добавить недвижимость",
               link: "/properties/add",
               backgroundColor: "bg-blue-500",
             }}
           >
-            List your properties and reach potential tenants . Rent as an Airbnb
-            or long term .
+            Разместите свои объекты и привлеките потенциальных клиентов.
+            Сдавайте в аренду как Airbnb или на длительный срок.
           </InfoBox>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default InfoBoxes;
+export default InfoBoxes
