@@ -282,9 +282,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_kitchen"
                 name="amenities"
-                value="Full Kitchen"
+                value="Кухня"
                 className="mr-2"
-                checked={fields.amenities.includes("Full Kitchen")}
+                checked={fields.amenities.includes("Кухня")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_kitchen">Кухня</label>
@@ -294,9 +294,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_washer_dryer"
                 name="amenities"
-                value="Washer & Dryer"
+                value="Стиральная машина"
                 className="mr-2"
-                checked={fields.amenities.includes("Washer & Dryer")}
+                checked={fields.amenities.includes("Стиральная машина")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_washer_dryer">Стиральная машина</label>
@@ -306,9 +306,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_free_parking"
                 name="amenities"
-                value="Free Parking"
+                value="Паркоместо"
                 className="mr-2"
-                checked={fields.amenities.includes("Free Parking")}
+                checked={fields.amenities.includes("Паркоместо")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_free_parking">Паркоместо</label>
@@ -318,9 +318,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_pool"
                 name="amenities"
-                value="Swimming Pool"
+                value="Бассейн"
                 className="mr-2"
-                checked={fields.amenities.includes("Swimming Pool")}
+                checked={fields.amenities.includes("Бассейн")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_pool">Бассейн</label>
@@ -330,9 +330,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_hot_tub"
                 name="amenities"
-                value="Hot Tub"
+                value="Джакузи"
                 className="mr-2"
-                checked={fields.amenities.includes("Hot Tub")}
+                checked={fields.amenities.includes("Джакузи")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_hot_tub">Джакузи</label>
@@ -342,9 +342,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_24_7_security"
                 name="amenities"
-                value="24/7 Security"
+                value="Охрана 24/7"
                 className="mr-2"
-                checked={fields.amenities.includes("24/7 Security")}
+                checked={fields.amenities.includes("Охрана 24/7")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_24_7_security">Охрана 24/7</label>
@@ -354,9 +354,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_wheelchair_accessible"
                 name="amenities"
-                value="Wheelchair Accessible"
+                value="Доступ для инвалидов"
                 className="mr-2"
-                checked={fields.amenities.includes("Wheelchair Accessible")}
+                checked={fields.amenities.includes("Доступ для инвалидов")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_wheelchair_accessible">
@@ -368,9 +368,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_elevator_access"
                 name="amenities"
-                value="Elevator Access"
+                value="Лифт"
                 className="mr-2"
-                checked={fields.amenities.includes("Elevator Access")}
+                checked={fields.amenities.includes("Лифт")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_elevator_access">Лифт</label>
@@ -380,9 +380,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_dishwasher"
                 name="amenities"
-                value="Dishwasher"
+                value="Посудомойка"
                 className="mr-2"
-                checked={fields.amenities.includes("Dishwasher")}
+                checked={fields.amenities.includes("Посудомойка")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_dishwasher">Посудомойка</label>
@@ -392,9 +392,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_gym_fitness_center"
                 name="amenities"
-                value="Gym/Fitness Center"
+                value="Спортзал"
                 className="mr-2"
-                checked={fields.amenities.includes("Gym/Fitness Center")}
+                checked={fields.amenities.includes("Спортзал")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_gym_fitness_center">
@@ -406,9 +406,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_air_conditioning"
                 name="amenities"
-                value="Air Conditioning"
+                value="Кондиционер"
                 className="mr-2"
-                checked={fields.amenities.includes("Air Conditioning")}
+                checked={fields.amenities.includes("Кондиционер")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_air_conditioning">Кондиционер</label>
@@ -418,9 +418,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_balcony_patio"
                 name="amenities"
-                value="Balcony/Patio"
+                value="Балкон/Патио"
                 className="mr-2"
-                checked={fields.amenities.includes("Balcony/Patio")}
+                checked={fields.amenities.includes("Балкон/Патио")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_balcony_patio">Балкон/Патио</label>
@@ -442,9 +442,9 @@ const PropertyAddForm = () => {
                 type="checkbox"
                 id="amenity_coffee_maker"
                 name="amenities"
-                value="Coffee Maker"
+                value="Кофемашина"
                 className="mr-2"
-                checked={fields.amenities.includes("Coffee Maker")}
+                checked={fields.amenities.includes("Кофемашина")}
                 onChange={handleAmenitiesChange}
               />
               <label htmlFor="amenity_coffee_maker">Кофемашина</label>
@@ -459,7 +459,7 @@ const PropertyAddForm = () => {
           <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
             <div className="flex items-center">
               <label htmlFor="weekly_rate" className="mr-2">
-                Weekly
+                Понедельно
               </label>
               <input
                 type="number"
@@ -472,7 +472,7 @@ const PropertyAddForm = () => {
             </div>
             <div className="flex items-center">
               <label htmlFor="monthly_rate" className="mr-2">
-                Monthly
+                Помесячно
               </label>
               <input
                 type="number"
@@ -485,7 +485,7 @@ const PropertyAddForm = () => {
             </div>
             <div className="flex items-center">
               <label htmlFor="nightly_rate" className="mr-2">
-                Nightly
+                Посуточно
               </label>
               <input
                 type="number"
@@ -504,7 +504,7 @@ const PropertyAddForm = () => {
             htmlFor="seller_name"
             className="block text-gray-700 font-bold mb-2"
           >
-            Seller Name
+            Имя продавца
           </label>
           <input
             type="text"
@@ -521,7 +521,7 @@ const PropertyAddForm = () => {
             htmlFor="seller_email"
             className="block text-gray-700 font-bold mb-2"
           >
-            Seller Email
+            Email продавца
           </label>
           <input
             type="email"
@@ -539,7 +539,7 @@ const PropertyAddForm = () => {
             htmlFor="seller_phone"
             className="block text-gray-700 font-bold mb-2"
           >
-            Seller Phone
+            Телефон продавца
           </label>
           <input
             type="tel"
