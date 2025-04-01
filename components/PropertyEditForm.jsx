@@ -33,6 +33,10 @@ const PropertyEditForm = () => {
       email: '',
       phone: '',
     },
+    // owner_info: {
+    //   phone: '',
+    //   url: '',
+    // },
   })
   const [loading, setLoading] = useState(true)
 
@@ -85,7 +89,7 @@ const PropertyEditForm = () => {
       setFields((prevFields) => ({
         ...prevFields,
         [name]: value,
-      }));
+      }))
     }
   }
   const handleAmenitiesChange = (e) => {
@@ -586,6 +590,40 @@ const PropertyEditForm = () => {
             onChange={handleChange}
           />
         </div>
+        {/* <div className='mb-4'>
+          <label
+            htmlFor='owner_phone'
+            className='block text-gray-700 font-bold mb-2'
+          >
+            Телефон собственника
+          </label>
+          <input
+            type='tel'
+            id='owner_phone'
+            name='owner_info.phone'
+            className='border rounded w-full py-2 px-3'
+            placeholder='Phone'
+            value={fields.owner_info.phone}
+            onChange={handleChange}
+          />
+        </div>
+        <div className='mb-4'>
+          <label
+            htmlFor='owner_url'
+            className='block text-gray-700 font-bold mb-2'
+          >
+            URL собственника
+          </label>
+          <input
+            type='text'
+            id='owner_url'
+            name='owner_info.url'
+            className='border rounded w-full py-2 px-3'
+            placeholder='Url'
+            value={fields.owner_info.url}
+            onChange={handleChange}
+          />
+        </div> */}
 
         <div>
           <button

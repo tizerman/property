@@ -51,6 +51,10 @@ const PropertySchema = new Schema(
 			email: String,
 			phone: String,
 		},
+    owner_info: {
+      phone: String,
+      url: String,
+    },
 		images: [
 			{
 				type: String,
