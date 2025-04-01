@@ -33,10 +33,10 @@ const PropertyEditForm = () => {
       email: '',
       phone: '',
     },
-    // owner_info: {
-    //   phone: '',
-    //   url: '',
-    // },
+    owner_info: {
+      phone: '',
+      url: '',
+    },
   })
   const [loading, setLoading] = useState(true)
 
@@ -590,7 +590,8 @@ const PropertyEditForm = () => {
             onChange={handleChange}
           />
         </div>
-        {/* <div className='mb-4'>
+
+        <div className='mb-4'>
           <label
             htmlFor='owner_phone'
             className='block text-gray-700 font-bold mb-2'
@@ -623,7 +624,7 @@ const PropertyEditForm = () => {
             value={fields.owner_info.url}
             onChange={handleChange}
           />
-        </div> */}
+        </div>
 
         <div>
           <button
