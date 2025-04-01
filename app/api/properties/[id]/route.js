@@ -112,6 +112,10 @@ export const PUT = async (request, { params }) => {
         email: formData.get('seller_info.email'),
         phone: formData.get('seller_info.phone'),
       },
+      owner_info: {
+        phone: formData.get('owner_info.phone'),
+        url: formData.get('owner_info.url'),
+      },
       owner: userId,
     }
 
