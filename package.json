@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.7",
     "flatted": "^3.3.2",
     "http-proxy-middleware": "^3.0.3",
     "mapbox-gl": "^3.9.0",

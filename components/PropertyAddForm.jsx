@@ -23,9 +23,9 @@ const PropertyAddForm = () => {
       nightly: "",
     },
     seller_info: {
-      name: "John",
-      email: "",
-      phone: "",
+      name: "Yevhenii",
+      email: "yevheniiera@gmail.com",
+      phone: "+380675843229",
     },
     owner_info: {
       phone: "",
